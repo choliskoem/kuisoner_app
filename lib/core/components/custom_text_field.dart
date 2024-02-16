@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'spaces.dart';
 
@@ -28,14 +29,10 @@ class CustomTextField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         if (showLabel) ...[
-          Text(
-            label,
-            style: const TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-          const SpaceHeight(12.0),
+          Text(label,
+              style: GoogleFonts.poppins(
+                  fontSize: 18, fontWeight: FontWeight.w400)),
+          const SpaceHeight(7.0),
         ],
         TextFormField(
           controller: controller,
@@ -45,11 +42,11 @@ class CustomTextField extends StatelessWidget {
           decoration: InputDecoration(
             suffixIcon: suffixIcon,
             border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16.0),
+              borderRadius: BorderRadius.circular(10.0),
               borderSide: const BorderSide(color: Colors.grey),
             ),
             enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16.0),
+              borderRadius: BorderRadius.circular(10.0),
               borderSide: const BorderSide(color: Colors.grey),
             ),
             hintText: label,

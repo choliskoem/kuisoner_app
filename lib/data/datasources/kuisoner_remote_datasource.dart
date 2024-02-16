@@ -11,7 +11,7 @@ class KuisonerRemoteDatasource {
   Future<Either<String, QuestionResponseModel>> getList() async {
     final autData = await AuthLocalDatasource().getAuthData();
     final response = await http
-        .get(Uri.parse('${Variables.baseUrl}/api/typequestions'), headers: {
+        .get(Uri.parse('${Variables.baseUrl}/api/survey'), headers: {
       'Authorization': 'Bearer ${autData.token}',
     });
     if (response.statusCode == 200) {

@@ -24,17 +24,76 @@ class QuestionResponseModel {
 }
 
 class Datum {
+  final String idSchedule;
+  final String titelQuestion;
+  final String tujuanQuestion;
+  final String caraPakaiQuestion;
+  final List<Category> category;
+
+  Datum({
+    required this.idSchedule,
+    required this.titelQuestion,
+    required this.tujuanQuestion,
+    required this.caraPakaiQuestion,
+    required this.category,
+  });
+
+  factory Datum.fromJson(Map<String, dynamic> json) => Datum(
+        idSchedule: json["id_schedule"],
+        titelQuestion: json["titel_question"],
+        tujuanQuestion: json["tujuan_question"],
+        caraPakaiQuestion: json["cara_pakai_question"],
+        category: List<Category>.from(
+            json["category"].map((x) => Category.fromJson(x))),
+      );
+
+  Map<String, dynamic> toJson() => {
+        "id_schedule": idSchedule,
+        "titel_question": titelQuestion,
+        "tujuan_question": tujuanQuestion,
+        "cara_pakai_question": caraPakaiQuestion,
+        "category": List<dynamic>.from(category.map((x) => x.toJson())),
+      };
+}
+
+class Category {
+  final String idCategory;
+  final String nameCategory;
+  final List<DataCategory> dataCategory;
+
+  Category({
+    required this.idCategory,
+    required this.nameCategory,
+    required this.dataCategory,
+  });
+
+  factory Category.fromJson(Map<String, dynamic> json) => Category(
+        idCategory: json["id_category"],
+        nameCategory: json["name_category"],
+        dataCategory: List<DataCategory>.from(
+            json["data_category"].map((x) => DataCategory.fromJson(x))),
+      );
+
+  Map<String, dynamic> toJson() => {
+        "id_category": idCategory,
+        "name_category": nameCategory,
+        "data_category":
+            List<dynamic>.from(dataCategory.map((x) => x.toJson())),
+      };
+}
+
+class DataCategory {
   final String idQuestion;
   final String question;
   final List<Option> option;
 
-  Datum({
+  DataCategory({
     required this.idQuestion,
     required this.question,
     required this.option,
   });
 
-  factory Datum.fromJson(Map<String, dynamic> json) => Datum(
+  factory DataCategory.fromJson(Map<String, dynamic> json) => DataCategory(
         idQuestion: json["id_question"],
         question: json["question"],
         option:

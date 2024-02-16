@@ -1,0 +1,160 @@
+{
+  "success": true,
+  "message": "List of questions",
+  "data": [
+    {
+      "id_schedule":"3632683c-586e-46dc-8164-0700672c30ed",
+      "titel_question": "Survey kepuasan Mahasiswa Terhadap Dosen tahun 2023-2024",
+      "tujuan_question": "Untuk Survey",
+      "cara_pakai_question":"1.fdafsfsfsfs",
+  
+      "category": [
+        {
+          "id_category": "031938103913111ada",
+          "name_category": "category 1",
+          "data_category": [
+            {
+              "id_question": "66ac65ac-bb4e-11ee-9f6e-d8c497c14a26",
+              "question": "Bagaimana Kinerja Anda?",
+              "option": [
+                {
+                  "id_option": "9136f974-1578-47c6-a43d-aaa96e66edfd",
+                  "name_option": "Sangat Baik"
+                },
+                {
+                  "id_option": "9a30bdc0-4768-46ee-b035-186ed41b3721",
+                  "name_option": "Cukup"
+                }
+              ]
+            },
+            {
+              "id_question": "993b2929-bb73-11ee-8021-16bef835ecaf",
+              "question": "Bagaimana Kabar Anda Hari Ini?",
+              "option": [
+                {
+                  "id_option": "1608d3e7-68a2-44fd-a88b-59c13fb1f4e5",
+                  "name_option": "Sangat Bagus"
+                },
+                {
+                  "id_option": "8445cd9d-2ee9-4155-9294-5122f1737ff4",
+                  "name_option": "Bagus"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id_category": "031938103913111ada",
+          "name_category": "category 1",
+          "data_category": [
+            {
+              "id_question": "66ac65ac-bb4e-11ee-9f6e-d8c497c14a26",
+              "question": "Bagaimana Mood Anda?",
+              "option": [
+                {
+                  "id_option": "9136f974-1578-47c6-a43d-aaa96e66edfd",
+                  "name_option": "Sangat Baik"
+                },
+                {
+                  "id_option": "9a30bdc0-4768-46ee-b035-186ed41b3721",
+                  "name_option": "Cukup"
+                }
+              ]
+            },
+            {
+              "id_question": "993b2929-bb73-11ee-8021-16bef835ecaf",
+              "question": "Bagaimana Kuliah anda hari Ini?",
+              "option": [
+                {
+                  "id_option": "1608d3e7-68a2-44fd-a88b-59c13fb1f4e5",
+                  "name_option": "Sangat Bagus"
+                },
+                {
+                  "id_option": "8445cd9d-2ee9-4155-9294-5122f1737ff4",
+                  "name_option": "Bagus"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_schedule": "3632683c-586e-46dc-8164-0700672c30ef",
+      "titel_question": "Survey kepuasan Mahasiswa Terhadap Alfamart tahun 2023-2024",
+      "tujuan_question": "Untuk Survey",
+      "cara_pakai_question":"1.fdafsfsfsfs",
+  
+      "category": [
+        {
+          "id_category": "031938103913111ada",
+          "name_category": "category 1",
+          "data_category": [
+            {
+              "id_question": "66ac65ac-bb4e-11ee-9f6e-d8c497c14a26",
+              "question": "Bagaimana Kinerja Anda?",
+              "option": [
+                {
+                  "id_option": "9136f974-1578-47c6-a43d-aaa96e66edfd",
+                  "name_option": "Sangat Baik"
+                },
+                {
+                  "id_option": "9a30bdc0-4768-46ee-b035-186ed41b3721",
+                  "name_option": "Cukup"
+                }
+              ]
+            },
+            {
+              "id_question": "993b2929-bb73-11ee-8021-16bef835ecaf",
+              "question": "Bagaimana Kabar Anda Hari Ini?",
+              "option": [
+                {
+                  "id_option": "1608d3e7-68a2-44fd-a88b-59c13fb1f4e5",
+                  "name_option": "Sangat Bagus"
+                },
+                {
+                  "id_option": "8445cd9d-2ee9-4155-9294-5122f1737ff4",
+                  "name_option": "Bagus"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id_category": "031938103913111ada",
+          "name_category": "category 1",
+          "data_category": [
+            {
+              "id_question": "66ac65ac-bb4e-11ee-9f6e-d8c497c14a26",
+              "question": "Bagaimana Mood Anda?",
+              "option": [
+                {
+                  "id_option": "9136f974-1578-47c6-a43d-aaa96e66edfd",
+                  "name_option": "Sangat Baik"
+                },
+                {
+                  "id_option": "9a30bdc0-4768-46ee-b035-186ed41b3721",
+                  "name_option": "Cukup"
+                }
+              ]
+            },
+            {
+              "id_question": "993b2929-bb73-11ee-8021-16bef835ecaf",
+              "question": "Bagaimana Kuliah anda hari Ini?",
+              "option": [
+                {
+                  "id_option": "1608d3e7-68a2-44fd-a88b-59c13fb1f4e5",
+                  "name_option": "Sangat Bagus"
+                },
+                {
+                  "id_option": "8445cd9d-2ee9-4155-9294-5122f1737ff4",
+                  "name_option": "Bagus"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

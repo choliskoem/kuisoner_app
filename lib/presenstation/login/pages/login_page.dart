@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kusioner_ung/presenstation/quisoner/pages/quisoner_page.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:kusioner_ung/presenstation/home/pages/dashboard_page.dart';
 
 import '../../../core/components/buttons.dart';
 import '../../../core/components/custom_text_field.dart';
@@ -32,33 +33,23 @@ class _LoginPageState extends State<LoginPage> {
       body: ListView(
         padding: const EdgeInsets.all(16.0),
         children: [
-          const SpaceHeight(80.0),
-          const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 130.0),
-              child: Icon(Icons.supervised_user_circle_rounded)),
-          const SpaceHeight(24.0),
-          const Center(
-            child: Text(
-              "POS Batch 11",
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w700,
-                color: Colors.black,
-              ),
+          const SpaceHeight(85.0),
+          Hero(
+            tag: "logo",
+            child: Image.asset(
+              "assets/images/logo_ung.png",
+              width: 150,
+              height: 150,
             ),
           ),
-          const SpaceHeight(8.0),
-          const Center(
+          Center(
             child: Text(
-              "Masuk untuk kasir",
-              style: TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.w400,
-                color: Colors.grey,
-              ),
+              "Login to Quisioner",
+              style: GoogleFonts.poppins(
+                  fontSize: 24, fontWeight: FontWeight.w500),
             ),
           ),
-          const SpaceHeight(40.0),
+          const SpaceHeight(44.0),
           CustomTextField(
             controller: usernameController,
             label: 'Username',
@@ -69,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
             label: 'Password',
             obscureText: true,
           ),
-          const SpaceHeight(24.0),
+          const SpaceHeight(36.0),
           BlocListener<LoginBloc, LoginState>(
             listener: (context, state) {
               state.maybeWhen(
@@ -77,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                 success: (authResponseModel) {
                   AuthLocalDatasource().saveAuthData(authResponseModel);
                   Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => const QuisonerPage(),
+                    builder: (context) => const DashboardPage(),
                   ));
                 },
                 error: (message) {
@@ -91,16 +82,41 @@ class _LoginPageState extends State<LoginPage> {
             child: BlocBuilder<LoginBloc, LoginState>(
               builder: (context, state) {
                 return state.maybeWhen(orElse: () {
-                  return Button.filled(
-                    onPressed: () {
-                      context.read<LoginBloc>().add(
-                            LoginEvent.login(
-                              email: usernameController.text,
-                              password: passwordController.text,
-                            ),
-                          );
-                    },
-                    label: 'Masuk',
+                  return Column(
+                    children: [
+                      Button.filled(
+                        width: 400,
+                        borderRadius: 10.0,
+                        height: 56,
+                        onPressed: () {
+                          context.read<LoginBloc>().add(
+                                LoginEvent.login(
+                                  email: usernameController.text,
+                                  password: passwordController.text,
+                                ),
+                              );
+                        },
+                        fontSize: 24,
+                        label: 'Login',
+                      ),
+                      const SizedBox(
+                        height: 166,
+                      ),
+                      Text(
+                        "Created By",
+                        style: GoogleFonts.poppins(
+                            color: Colors.black,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400),
+                      ),
+                      Text(
+                        "Panggulo Team",
+                        style: GoogleFonts.poppins(
+                            color: Colors.black,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w600),
+                      )
+                    ],
                   );
                 }, loading: () {
                   return const Center(

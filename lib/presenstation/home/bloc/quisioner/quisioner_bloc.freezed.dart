@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'quisoner_bloc.dart';
+part of 'quisioner_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,7 +15,7 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$QuisonerEvent {
+mixin _$QuisionerEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
@@ -57,16 +57,16 @@ mixin _$QuisonerEvent {
 }
 
 /// @nodoc
-abstract class $QuisonerEventCopyWith<$Res> {
-  factory $QuisonerEventCopyWith(
-          QuisonerEvent value, $Res Function(QuisonerEvent) then) =
-      _$QuisonerEventCopyWithImpl<$Res, QuisonerEvent>;
+abstract class $QuisionerEventCopyWith<$Res> {
+  factory $QuisionerEventCopyWith(
+          QuisionerEvent value, $Res Function(QuisionerEvent) then) =
+      _$QuisionerEventCopyWithImpl<$Res, QuisionerEvent>;
 }
 
 /// @nodoc
-class _$QuisonerEventCopyWithImpl<$Res, $Val extends QuisonerEvent>
-    implements $QuisonerEventCopyWith<$Res> {
-  _$QuisonerEventCopyWithImpl(this._value, this._then);
+class _$QuisionerEventCopyWithImpl<$Res, $Val extends QuisionerEvent>
+    implements $QuisionerEventCopyWith<$Res> {
+  _$QuisionerEventCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -83,7 +83,7 @@ abstract class _$$StartedImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$StartedImplCopyWithImpl<$Res>
-    extends _$QuisonerEventCopyWithImpl<$Res, _$StartedImpl>
+    extends _$QuisionerEventCopyWithImpl<$Res, _$StartedImpl>
     implements _$$StartedImplCopyWith<$Res> {
   __$$StartedImplCopyWithImpl(
       _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
@@ -97,7 +97,7 @@ class _$StartedImpl implements _Started {
 
   @override
   String toString() {
-    return 'QuisonerEvent.started()';
+    return 'QuisionerEvent.started()';
   }
 
   @override
@@ -172,7 +172,7 @@ class _$StartedImpl implements _Started {
   }
 }
 
-abstract class _Started implements QuisonerEvent {
+abstract class _Started implements QuisionerEvent {
   const factory _Started() = _$StartedImpl;
 }
 
@@ -185,7 +185,7 @@ abstract class _$$FetchImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$FetchImplCopyWithImpl<$Res>
-    extends _$QuisonerEventCopyWithImpl<$Res, _$FetchImpl>
+    extends _$QuisionerEventCopyWithImpl<$Res, _$FetchImpl>
     implements _$$FetchImplCopyWith<$Res> {
   __$$FetchImplCopyWithImpl(
       _$FetchImpl _value, $Res Function(_$FetchImpl) _then)
@@ -199,7 +199,7 @@ class _$FetchImpl implements _Fetch {
 
   @override
   String toString() {
-    return 'QuisonerEvent.fetch()';
+    return 'QuisionerEvent.fetch()';
   }
 
   @override
@@ -274,19 +274,18 @@ class _$FetchImpl implements _Fetch {
   }
 }
 
-abstract class _Fetch implements QuisonerEvent {
+abstract class _Fetch implements QuisionerEvent {
   const factory _Fetch() = _$FetchImpl;
 }
 
 /// @nodoc
-mixin _$QuisonerState {
+mixin _$QuisionerState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(List<Datum> datum) success,
     required TResult Function(String message) error,
-    required TResult Function() connection,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -295,7 +294,6 @@ mixin _$QuisonerState {
     TResult? Function()? loading,
     TResult? Function(List<Datum> datum)? success,
     TResult? Function(String message)? error,
-    TResult? Function()? connection,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -304,7 +302,6 @@ mixin _$QuisonerState {
     TResult Function()? loading,
     TResult Function(List<Datum> datum)? success,
     TResult Function(String message)? error,
-    TResult Function()? connection,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -314,7 +311,6 @@ mixin _$QuisonerState {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
-    required TResult Function(_Connection value) connection,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -323,7 +319,6 @@ mixin _$QuisonerState {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Connection value)? connection,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -332,23 +327,22 @@ mixin _$QuisonerState {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
-    TResult Function(_Connection value)? connection,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $QuisonerStateCopyWith<$Res> {
-  factory $QuisonerStateCopyWith(
-          QuisonerState value, $Res Function(QuisonerState) then) =
-      _$QuisonerStateCopyWithImpl<$Res, QuisonerState>;
+abstract class $QuisionerStateCopyWith<$Res> {
+  factory $QuisionerStateCopyWith(
+          QuisionerState value, $Res Function(QuisionerState) then) =
+      _$QuisionerStateCopyWithImpl<$Res, QuisionerState>;
 }
 
 /// @nodoc
-class _$QuisonerStateCopyWithImpl<$Res, $Val extends QuisonerState>
-    implements $QuisonerStateCopyWith<$Res> {
-  _$QuisonerStateCopyWithImpl(this._value, this._then);
+class _$QuisionerStateCopyWithImpl<$Res, $Val extends QuisionerState>
+    implements $QuisionerStateCopyWith<$Res> {
+  _$QuisionerStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -365,7 +359,7 @@ abstract class _$$InitialImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$QuisonerStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$QuisionerStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
@@ -379,7 +373,7 @@ class _$InitialImpl implements _Initial {
 
   @override
   String toString() {
-    return 'QuisonerState.initial()';
+    return 'QuisionerState.initial()';
   }
 
   @override
@@ -398,7 +392,6 @@ class _$InitialImpl implements _Initial {
     required TResult Function() loading,
     required TResult Function(List<Datum> datum) success,
     required TResult Function(String message) error,
-    required TResult Function() connection,
   }) {
     return initial();
   }
@@ -410,7 +403,6 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? loading,
     TResult? Function(List<Datum> datum)? success,
     TResult? Function(String message)? error,
-    TResult? Function()? connection,
   }) {
     return initial?.call();
   }
@@ -422,7 +414,6 @@ class _$InitialImpl implements _Initial {
     TResult Function()? loading,
     TResult Function(List<Datum> datum)? success,
     TResult Function(String message)? error,
-    TResult Function()? connection,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -438,7 +429,6 @@ class _$InitialImpl implements _Initial {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
-    required TResult Function(_Connection value) connection,
   }) {
     return initial(this);
   }
@@ -450,7 +440,6 @@ class _$InitialImpl implements _Initial {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Connection value)? connection,
   }) {
     return initial?.call(this);
   }
@@ -462,7 +451,6 @@ class _$InitialImpl implements _Initial {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
-    TResult Function(_Connection value)? connection,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -472,7 +460,7 @@ class _$InitialImpl implements _Initial {
   }
 }
 
-abstract class _Initial implements QuisonerState {
+abstract class _Initial implements QuisionerState {
   const factory _Initial() = _$InitialImpl;
 }
 
@@ -485,7 +473,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$QuisonerStateCopyWithImpl<$Res, _$LoadingImpl>
+    extends _$QuisionerStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
@@ -499,7 +487,7 @@ class _$LoadingImpl implements _Loading {
 
   @override
   String toString() {
-    return 'QuisonerState.loading()';
+    return 'QuisionerState.loading()';
   }
 
   @override
@@ -518,7 +506,6 @@ class _$LoadingImpl implements _Loading {
     required TResult Function() loading,
     required TResult Function(List<Datum> datum) success,
     required TResult Function(String message) error,
-    required TResult Function() connection,
   }) {
     return loading();
   }
@@ -530,7 +517,6 @@ class _$LoadingImpl implements _Loading {
     TResult? Function()? loading,
     TResult? Function(List<Datum> datum)? success,
     TResult? Function(String message)? error,
-    TResult? Function()? connection,
   }) {
     return loading?.call();
   }
@@ -542,7 +528,6 @@ class _$LoadingImpl implements _Loading {
     TResult Function()? loading,
     TResult Function(List<Datum> datum)? success,
     TResult Function(String message)? error,
-    TResult Function()? connection,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -558,7 +543,6 @@ class _$LoadingImpl implements _Loading {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
-    required TResult Function(_Connection value) connection,
   }) {
     return loading(this);
   }
@@ -570,7 +554,6 @@ class _$LoadingImpl implements _Loading {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Connection value)? connection,
   }) {
     return loading?.call(this);
   }
@@ -582,7 +565,6 @@ class _$LoadingImpl implements _Loading {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
-    TResult Function(_Connection value)? connection,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -592,7 +574,7 @@ class _$LoadingImpl implements _Loading {
   }
 }
 
-abstract class _Loading implements QuisonerState {
+abstract class _Loading implements QuisionerState {
   const factory _Loading() = _$LoadingImpl;
 }
 
@@ -607,7 +589,7 @@ abstract class _$$SuccessImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$SuccessImplCopyWithImpl<$Res>
-    extends _$QuisonerStateCopyWithImpl<$Res, _$SuccessImpl>
+    extends _$QuisionerStateCopyWithImpl<$Res, _$SuccessImpl>
     implements _$$SuccessImplCopyWith<$Res> {
   __$$SuccessImplCopyWithImpl(
       _$SuccessImpl _value, $Res Function(_$SuccessImpl) _then)
@@ -642,7 +624,7 @@ class _$SuccessImpl implements _Success {
 
   @override
   String toString() {
-    return 'QuisonerState.success(datum: $datum)';
+    return 'QuisionerState.success(datum: $datum)';
   }
 
   @override
@@ -670,7 +652,6 @@ class _$SuccessImpl implements _Success {
     required TResult Function() loading,
     required TResult Function(List<Datum> datum) success,
     required TResult Function(String message) error,
-    required TResult Function() connection,
   }) {
     return success(datum);
   }
@@ -682,7 +663,6 @@ class _$SuccessImpl implements _Success {
     TResult? Function()? loading,
     TResult? Function(List<Datum> datum)? success,
     TResult? Function(String message)? error,
-    TResult? Function()? connection,
   }) {
     return success?.call(datum);
   }
@@ -694,7 +674,6 @@ class _$SuccessImpl implements _Success {
     TResult Function()? loading,
     TResult Function(List<Datum> datum)? success,
     TResult Function(String message)? error,
-    TResult Function()? connection,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -710,7 +689,6 @@ class _$SuccessImpl implements _Success {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
-    required TResult Function(_Connection value) connection,
   }) {
     return success(this);
   }
@@ -722,7 +700,6 @@ class _$SuccessImpl implements _Success {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Connection value)? connection,
   }) {
     return success?.call(this);
   }
@@ -734,7 +711,6 @@ class _$SuccessImpl implements _Success {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
-    TResult Function(_Connection value)? connection,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -744,7 +720,7 @@ class _$SuccessImpl implements _Success {
   }
 }
 
-abstract class _Success implements QuisonerState {
+abstract class _Success implements QuisionerState {
   const factory _Success(final List<Datum> datum) = _$SuccessImpl;
 
   List<Datum> get datum;
@@ -764,7 +740,7 @@ abstract class _$$ErrorImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<$Res>
-    extends _$QuisonerStateCopyWithImpl<$Res, _$ErrorImpl>
+    extends _$QuisionerStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
@@ -794,7 +770,7 @@ class _$ErrorImpl implements _Error {
 
   @override
   String toString() {
-    return 'QuisonerState.error(message: $message)';
+    return 'QuisionerState.error(message: $message)';
   }
 
   @override
@@ -821,7 +797,6 @@ class _$ErrorImpl implements _Error {
     required TResult Function() loading,
     required TResult Function(List<Datum> datum) success,
     required TResult Function(String message) error,
-    required TResult Function() connection,
   }) {
     return error(message);
   }
@@ -833,7 +808,6 @@ class _$ErrorImpl implements _Error {
     TResult? Function()? loading,
     TResult? Function(List<Datum> datum)? success,
     TResult? Function(String message)? error,
-    TResult? Function()? connection,
   }) {
     return error?.call(message);
   }
@@ -845,7 +819,6 @@ class _$ErrorImpl implements _Error {
     TResult Function()? loading,
     TResult Function(List<Datum> datum)? success,
     TResult Function(String message)? error,
-    TResult Function()? connection,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -861,7 +834,6 @@ class _$ErrorImpl implements _Error {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
     required TResult Function(_Error value) error,
-    required TResult Function(_Connection value) connection,
   }) {
     return error(this);
   }
@@ -873,7 +845,6 @@ class _$ErrorImpl implements _Error {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
     TResult? Function(_Error value)? error,
-    TResult? Function(_Connection value)? connection,
   }) {
     return error?.call(this);
   }
@@ -885,7 +856,6 @@ class _$ErrorImpl implements _Error {
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
     TResult Function(_Error value)? error,
-    TResult Function(_Connection value)? connection,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -895,131 +865,11 @@ class _$ErrorImpl implements _Error {
   }
 }
 
-abstract class _Error implements QuisonerState {
+abstract class _Error implements QuisionerState {
   const factory _Error(final String message) = _$ErrorImpl;
 
   String get message;
   @JsonKey(ignore: true)
   _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$ConnectionImplCopyWith<$Res> {
-  factory _$$ConnectionImplCopyWith(
-          _$ConnectionImpl value, $Res Function(_$ConnectionImpl) then) =
-      __$$ConnectionImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$ConnectionImplCopyWithImpl<$Res>
-    extends _$QuisonerStateCopyWithImpl<$Res, _$ConnectionImpl>
-    implements _$$ConnectionImplCopyWith<$Res> {
-  __$$ConnectionImplCopyWithImpl(
-      _$ConnectionImpl _value, $Res Function(_$ConnectionImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$ConnectionImpl implements _Connection {
-  const _$ConnectionImpl();
-
-  @override
-  String toString() {
-    return 'QuisonerState.connection()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ConnectionImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(List<Datum> datum) success,
-    required TResult Function(String message) error,
-    required TResult Function() connection,
-  }) {
-    return connection();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(List<Datum> datum)? success,
-    TResult? Function(String message)? error,
-    TResult? Function()? connection,
-  }) {
-    return connection?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(List<Datum> datum)? success,
-    TResult Function(String message)? error,
-    TResult Function()? connection,
-    required TResult orElse(),
-  }) {
-    if (connection != null) {
-      return connection();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(_Loading value) loading,
-    required TResult Function(_Success value) success,
-    required TResult Function(_Error value) error,
-    required TResult Function(_Connection value) connection,
-  }) {
-    return connection(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(_Loading value)? loading,
-    TResult? Function(_Success value)? success,
-    TResult? Function(_Error value)? error,
-    TResult? Function(_Connection value)? connection,
-  }) {
-    return connection?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Success value)? success,
-    TResult Function(_Error value)? error,
-    TResult Function(_Connection value)? connection,
-    required TResult orElse(),
-  }) {
-    if (connection != null) {
-      return connection(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _Connection implements QuisonerState {
-  const factory _Connection() = _$ConnectionImpl;
 }
